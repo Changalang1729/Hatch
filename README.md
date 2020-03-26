@@ -39,5 +39,10 @@ which gives instructions on running the program (including the timeout option).
 Key assumptions:
 Assume that the -h is about the installer
 
+Running the Executable:
+'./Hatch' if default to 60 seconds
+otherwise './Hatch [$TIME]'
+will provide error if more than one argument after executable name
+
 Key Caveats:
 From all the research I've done, it seems that Python shouldn't be made into an executable anyway. However, if needed, please go into the directory containing the file, run 'pip install pyinstaller', 'pyinstaller script.py', and then go into the subdirectory 'dist', and find the executable. 
